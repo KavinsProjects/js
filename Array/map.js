@@ -27,3 +27,16 @@ console.log(map);
 console.log(map.clear());//removes everything from the map.
 console.log(map);
 console.log(map.size);
+
+
+for(key of map.keys()){ //print key only
+    console.log(key);
+}
+
+for(key of map.values()){ //it print vlaues only
+    console.log(map);
+}
+
+for(key of map){
+    console.log(map);
+}
