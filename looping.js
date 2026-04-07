@@ -28,7 +28,7 @@ for(var i=1; i <=20; i++){
     }
     
 }
-
+//odd evevn 
 for (let i=0; i <100; i++){
     if(i % 2 == 0){
         console.log(`${i} - evevnt`);
@@ -45,3 +45,4 @@ for (i=1; i<=10; i++){
         console.log(`${i} * ${x} = ${i*x} `);
     }
 }
+

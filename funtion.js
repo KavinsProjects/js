@@ -8,6 +8,7 @@
 //  > . Function Declaration
 //  > .. Function Declaration
 // */
+// assigment - we store the funtion in variable
 
 // add(); // Hoisted can call before declartion
 // function add(a,b){
@@ -92,3 +93,13 @@ function revStr(strin){
 }
 
 console.log(revStr("kavin"));
+
+
+let a ;
+a =10;
+console.log(a);
+
+//arrow funtion
+//name less funtion
+let evenOdd = (a) => a%2==0? "Even": "odd";
+console.log(evenOdd(3));
