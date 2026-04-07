@@ -16,3 +16,8 @@ console.log(myarry[0]); //print lam
 console.log(tripvist.length);
 const lasttipt = tripvist[tripvist.length -1];
 console.log(lasttipt);
+
+//changing iteams in array
+
+tripvist[1] = "varanasi";
+console.log(tripvist);
