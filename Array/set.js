@@ -39,3 +39,36 @@ number.add(7)
 console.log(number.size); //size
 
 
+//removeing the duplicate 
+
+let dup = new Set();
+
+dup.add(1)
+    .add(2)
+    .add(2)
+    .add(3)
+    .add(3) 
+    .add(3)
+
+console.log(dup);
+
+let setUnqName = new Set();
+
+setUnqName.add("kavin")
+          .add("Aurn")
+          .add("kavin")
+          .add("Vijay");
+
+    console.log(setUnqName);
+
+
+let games = new Set();
+
+games.add("f1")
+     .add("foodball")
+     .add("Tennis")
+     .add("f1");
+    
+console.log(games);
+
+
