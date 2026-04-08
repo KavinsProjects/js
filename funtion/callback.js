@@ -13,18 +13,38 @@ used to handle async operation :
 // let sub =(a,b) =>a-b;
 
 
-//ex ques
-let muiltByFive = (number) =>  number*5 ; console.log(muiltByFive(10));
+// //ex ques
+// let muiltByFive = (number) =>  number*5 ; console.log(muiltByFive(10));
 
 
-function operation(op, a,b){
-    return op(a,b);
+// function operation(op, a,b){
+//     return op(a,b);
+// }
+// let add = (a,b) => a+b;
+// let sub = (a,b) => a-b;
+
+// console.log(operation(sub, 10, 5));
+
+// setTimeout(()=>{
+//     console.log("welcome ,come in")
+// },100);
+
+
+hello(broo);
+function hello(callbav){
+    console.log("hello");
+    callbav();
 }
-let add = (a,b) => a+b;
-let sub = (a,b) => a-b;
 
-console.log(operation(sub, 10, 5));
+function broo(){
 
-setTimeout(()=>{
-    console.log("welcome ,come in")
-},100);
+    console.log("Hi Broo");
+}
+
+function leave(){
+    console.log("leave this area");
+}
+
+function goodbye(){
+    console.log("Bye Kavin");
+}

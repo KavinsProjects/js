@@ -1,5 +1,7 @@
-const str = "hello worls";
+const str = "hello world";
 
-let mystr = str.split('').reverse().join("");
+const reversed = str.split(' ')              
+  .map(word => word.split('').reverse().join('')) 
+  .join('');                                  
 
-console.log(mystr);
+console.log(reversed); 

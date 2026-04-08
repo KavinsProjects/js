@@ -1,36 +1,25 @@
-/*Immdiately Invoked Funtion Expression */
-
-//Funtion
-
-sayHi()
-
-function sayHi(){
-    console.log("supp!!!")
-}
-
-//iife
-
-(function(){
-    console.log("Hey Kavin's how is your life going");
-})();
-
-(function(){
-    const userF1 = "max";
-    console.log("welcome Max "+userF1);
-
-})();
+// 
 
 
-var a = 3; //Global Scope
+let no1 = 67;
+let no2 = 90;
 
-(function(){
-    var a = 5; //Local Scope Which is used in inside the fun()
-    console.log("kavin's fav num is" +a);
+(function add (num1, num2){
+    let result = num1+num2;
+    console.log(result);
+})(no1, no2);
 
-})();
-console.log(a); 
 
+let a = 34, b = 23;
+
+(function sub (sub1,sub2){
+    let total = sub1 - sub2;
+    console.log(total);
+})(a,b)//calling the funtion
 
 /*
-var let const ->  works;
+(funtion funName(){
+    
+}()
+
 */
