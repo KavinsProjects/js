@@ -78,3 +78,6 @@ console.log(numb.shift());
 
 numb.unshift('a'); //need pass the value
 console.log(numb);
+
+
+//delete - is Used to delete the 
