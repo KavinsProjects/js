@@ -30,21 +30,23 @@ used to handle async operation :
 // },100);
 
 
-hello(broo);
-function hello(callbav){
-    console.log("hello");
-    callbav();
-}
+// hello(broo);
+// function hello(callbav){
+//     console.log("hello");
+//     callbav();
+// }
 
-function broo(){
+// function broo(){
 
-    console.log("Hi Broo");
-}
+//     console.log("Hi Broo");
+// }
 
-function leave(){
-    console.log("leave this area");
-}
+// function leave(){
+//     console.log("leave this area");
+// }
 
-function goodbye(){
-    console.log("Bye Kavin");
-}
+// function goodbye(){
+//     console.log("Bye Kavin");
+// }
+
+

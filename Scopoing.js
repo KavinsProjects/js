@@ -26,3 +26,5 @@ function funtion1(){
 function funtion2(){
     console.log(x);
 }
+
+    
