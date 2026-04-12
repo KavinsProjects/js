@@ -17,7 +17,9 @@
 function Cars (Brand, year, type, color){
     this.Brand = Brand,
     this.year = year,
+    // this.{};
     this.type = type,
+    // this return();
     this.color = color,
     this.drive = function(){
         console.log(`you drive the ${this.Brand}`)
@@ -43,7 +45,7 @@ mycar1.drive();
 
 //parc
 
-function house(fan, Ac, Tv, pc, laptop){
+function House(fan, Ac, Tv, pc, laptop){
     this.FanOne = fan,
     this.poolAc = Ac,
     this.sonyTv = Tv,
@@ -52,7 +54,7 @@ function house(fan, Ac, Tv, pc, laptop){
     this.people = function(){console.log(`My Hosue we have ${this.FanOne}`)}
 };
 
-const houseOne  = new house("FreeFan", "coolAC", "Sony 53.ich","Nvidia","AsusROG");
+const houseOne  = new House("FreeFan", "coolAC", "Sony 53.ich","Nvidia","AsusROG");
 
 console.log(houseOne.FanOne);
 console.log(houseOne.computer);
