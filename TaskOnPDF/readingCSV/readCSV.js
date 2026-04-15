@@ -10,43 +10,38 @@ fs.createReadStream('public_TypingActivity_export_2026-04-11_182310.csv')
   })
   .on('end', () => {
 
-    
-    results.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt));
-
-    
-    const firstData = {};
+    const uniqueData = {};
+    const finalResult = [];
 
     results.forEach(row => {
       const code = row.code;
+      const level = row.word; // your last column (1,2,3,4)
 
-      if (!firstData[code]) {
-        firstData[code] = {
+      const key = `${code}-${level}`;
+
+      if (!uniqueData[key]) {
+        uniqueData[key] = true;
+
+        finalResult.push({
           id: row.id,
-          word: row.word,
-          createdAt: row.createdAt
-        };
+          code: row.code,
+          word: row.word
+        });
       }
     });
 
-    const finalResult = Object.values(firstData);
 
-    
-    const headers = ['id', 'word', 'createdAt'];
+    const headers = ['id', 'code', 'word'];
     const csvRows = [];
 
-    
     csvRows.push(headers.join(','));
 
-    
     finalResult.forEach(row => {
-      const values = headers.map(header => row[header]);
+      const values = headers.map(h => row[h]);
       csvRows.push(values.join(','));
     });
 
-    const csvData = csvRows.join('\n');
+    fs.writeFileSync('output.csv', csvRows.join('\n'));
 
-    
-    fs.writeFileSync('output.csv', csvData);
-
-    console.log(' CSV file saved as output.csv');
+    console.log(' Fixed CSV created');
   });

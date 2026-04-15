@@ -1,15 +1,12 @@
-
-
-// const objejss = {
-//     name : "kavin",
-//     age : 12
+// const dog ={
+//     name : "boreny",
+//     age : 3,
 // };
+// console.log(dog.name);
+// console.log(dog.age);
+// console.log(dog.toString());
+// console.log(dog)
 
-// console.log(objejss.age);
-// console.log(objejss.age);
-
-// //
-
-const movie  = ["Harry Poter", "lord of rings", ];
-
-console.log(movie.__proto__);
+const mybooks = ["the window girl", "whitenights", "waterstory"];
+console.log(mybooks);
+console.log(Object.getPrototypeOf(mybooks));

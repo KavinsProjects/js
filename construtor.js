@@ -51,7 +51,7 @@ function House(fan, Ac, Tv, pc, laptop){
     this.sonyTv = Tv,
     this.computer = pc,
     this.Ammalaptop = laptop 
-    this.people = function(){console.log(`My Hosue we have ${this.FanOne}`)}
+    this.people = function(){console.log(`My Hosue we have ${this.FanOne}`)} //method
 };
 
 const houseOne  = new House("FreeFan", "coolAC", "Sony 53.ich","Nvidia","AsusROG");

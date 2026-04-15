@@ -20,3 +20,4 @@ let user = [
 //target is usersage
 const age = user.filter(person=> person.age > 18).map(person => `${person.name} ${person.lastname}`);
 console.log(age);
+
