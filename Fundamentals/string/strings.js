@@ -1,9 +1,9 @@
-// string slicing = creating a substring 
-//                            from a portion of another string
-//                            string.slice(start, end)
+// // string slicing = creating a substring 
+// //                            from a portion of another string
+// //                            string.slice(start, end)
 
 
-//string.slice(start, end) index values
+// //string.slice(start, end) index values
 
 
 
@@ -19,12 +19,12 @@
 // console.log(firscahr);
 // console.log(lastName);
 
-let fullName = "kavinshep code";
+// // let fullName = "kavinshep code";
 
-let firstName = fullName.slice(0,fullName.indexOf(" "));
-let lastName = fullName.slice(fullName.indexOf("")+1)
-console.log(firstName);
-console.log(lastName);
+// // let firstName = fullName.slice(0,fullName.indexOf(" "));
+// // let lastName = fullName.slice(fullName.indexOf("")+1)
+// // console.log(firstName);
+// // console.log(lastName);
 
 //
 

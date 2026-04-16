@@ -1,6 +1,7 @@
-// let furtie = "apple";
-// let b = new String("apple");
-// console.log(furtie === b );
+let furtie = "apple";
+let b = new String("apple");
+console.log(typeof b);
+console.log(furtie === b );
 
 let num1 = 23;
 let num2 = "23";

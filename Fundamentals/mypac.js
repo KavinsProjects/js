@@ -6,7 +6,7 @@
 
 
 // const productisrnot = products.filter(avaiblae=>avaiblae.inStock == true ).map(products => `${products.name} and its price is ${products.price}`);
-// // console.log(productisrnot);
+//  console.log(productisrnot);
 
 // const students = [
 //   { name: "Ali", marks: 80, email: "ali@mail.com" },
@@ -14,7 +14,7 @@
 //   { name: "John", marks: 55, email: "john@mail.com" },
 // ];
 
-// const goodmark = students.filter(examark => examark.marks>=50).map(studentname=> `${students.name},emai lid is ${students.email}`);
+// const goodmark = students.filter(examark => examark.marks> 50).map(studentname=> `${students.name},emai lid is ${students.email}`);
 // console.log(goodmark);
 
 const employees = [
