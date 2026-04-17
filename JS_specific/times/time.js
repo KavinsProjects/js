@@ -41,7 +41,6 @@ loeaddata();
 
 
 
-
 console.time("total time taken fetch data form ")
 
 await fetch("https://v1.formula-1.api-sports.io/seasons")
