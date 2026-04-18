@@ -18,8 +18,8 @@ Resolve    Reject
        ↓     ↓
       .finally
 
-
-  syntax
+    
+syntax
 
 const funtionName =() =>{
     return new Promise((resolve, reject)=>{
@@ -32,8 +32,8 @@ const funtionName =() =>{
         }
         })
     }
-
-*/
+  
+*/   
 
 const stock = {
   fruits: ["Apple", "Banana", "Mango", "Strawberry", "Watermelon"],
@@ -42,18 +42,5 @@ const stock = {
   topping: ["Chocolate", "peanuts"],
 };
 
-let shop_is_open = true;
+let shop_is_open = false;
 
-let order = (time, work) => {
-  return new Promise((resolve, reject) => {
-    if (shop_is_open) {
-      setTimeout(() => {
-        resolve(work());
-      }, time);
-    } else {
-      reject(console.log("Sorry Shop is closed"));
-    }
-  });
-};
-
-order(1000, () => console.log(`${stock.fruits[0]}`));
