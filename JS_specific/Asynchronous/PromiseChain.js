@@ -93,5 +93,5 @@ order(1000, () =>
 })
 
 .then(()=>{
-    return order(100,()=>console.log(`hey We made a ice cream`))
+    return order(1000,()=>console.log(`hey We made a ice cream`))
 })
