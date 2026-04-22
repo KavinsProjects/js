@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Pictureof the day</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+        height: 500px;
+        border: 5px solid black;
+        border-radius: 5px;
+        
+    }
+    .heading{
+        margin: none;
+        padding: 10px;
+        align-items: center;
+    }
+    .inpubox{
+        width: 500px;
+        height: 250px;
+        font-family: sans-serif;
+        display: contents;
+    }
+
+</style>
+<body>
+
+    <div class="container">
+        <div class="heading"><h3>NASA's content</h3></div>
+        <button onclick="nasaPictureOfDay()" id="getdata">click here to see info..</button>
+        <input type="text" id="displayBox" class="inpubox">
+        
+    </div>
+    <script>
+
+
+
+        nasaPictureOfDay();
+
+        const getdatafrom = document.getElementById("getdata").value .toUpperCase();
+
+        async function nasaPictureOfDay() {
+            try{
+
+                const reponse = await fetch(`https://api.nasa.gov/planetary/apod?api_key=3FZDf42ovyftgfpQMuLesZmTs1wtW21jydzAVcze${getdatafrom}`);
+                if(! reponse.ok){
+                    console.log("error in fecting the data from source");
+                }else{
+                    const data = await reponse.json();
+                    const todate = data.data
+                    const titleinfo = data.title;
+                    const getinfo = data.explanation
+                    const urlinfo = data.url
+                    
+                    const infoDisplay = document.getElementById("displayBox");
+                    //outputdata.value = worddata;
+                    //infoDisplay.value = todate;
+                    //infoDisplay.value = titleinfo;
+                    infoDisplay.value = getinfo;
+                    //infoDisplay.value = urlinfo;
+
+                    infoDisplay.style.display = "block";
+                }
+            }
+
+            catch(error){
+                console.error(error);
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
